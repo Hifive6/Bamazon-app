@@ -11,21 +11,46 @@ var connection = mysql.createConnection({
 connection.connect(function(err){
     if (err) throw err
     console.log(`${connection.threadId}`)
-    listItems()
+    //afterConnection()
+    // mainMenu()
     connection.end();
 })
 
-function mainMenu(){
-    inquirer.prompt({
+// function afterConnection() {
+//     connection.query("SELECT * FROM products", function(err, res) {
+//       if (err) throw err;
+//       console.log(res);
+//       connection.end();
+//     });
+//   }
 
-    })
-}
+// function mainMenu(){
+//     // var query = "SELECT price FROM products"
+//     connection.query("SELECT * FROM products", function(err, res){
+//         // console.log(res);
+//         // connection.end()
+//         if(err) throw err
+//         itemsArr = [];
+//         res.forEach(function(element){
+//             itemsArr.push(element.id.toString());
+//             itemsArr.push(element.product_name.toString());
+//             itemsArr.push(element.price);
+// console.log(itemsArr)
+//         })
+        
+    
+//     inquirer.prompt({
+//         name: 'name',
+//         type: 'list',
+//         message: 'What would like to buy',
+//         choices: itemsArr
+
+//     }).
+//     then(function(select){
 
 
-function listItems(){
-    var query = "SELECT id, product_name, price FROM products WHERE ?";
-    connection.query(query, function(res, err){
-        console.log(res)
-    })
-} 
+//     })
+// })
+// }
+
 
