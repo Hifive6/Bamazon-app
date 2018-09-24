@@ -1,6 +1,6 @@
 # Bamazon-app
 
-
+Screen Shot 2018-09-24 at 5.24.00 PM
 
 This is an application builder using MySQL and Node.js.
 It is built to resemble a customer buying a product on Amazon.
